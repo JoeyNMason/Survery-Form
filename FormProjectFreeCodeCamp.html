@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<!-- tells the browsers which language to show in -->
+  <head> 
+    <!-- head element cotains meta data -->
+    <!-- Meta data is data about data -->
+    <meta charset="utf-8"> <!-- character encoding -->
+    <title>Survey Form</title> <!-- the name shown in the webpage tab -->
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <!-- break between body and head elements -->
+<body>
+<h1 id="title">Survey Form</h1> 
+<!-- h1 is the main title of the webpage --> 
+<!-- id gives the element a unique id to be later used with css -->
+<p id="description">description of survey form</p>
+<!-- allows the writing of text -->
+<form id="survey-form"> <!-- represents a document section containing interactive controls for submitting information-->
+
+<fieldset> <!-- used to group several controls as well as labels ( <label> ) within a web form -->
+  <label id="name-label">Enter your name<input placeholder="John Doe" id="name" type="text" required /></label> <!-- the label element is used to create a caption for form control -->
+  <label id="email-label">Enter your email<input placeholder="johndoe@gmail.com" id="email" type="email" required /></label>
+  <label id="number-label">Your age<input id="number" type="number" min="16" max="101" required placeholder="21" /></label>
+</fieldset>
+<!-- -->
+<fieldset>
+  <label id="dropdown-label"> 
+    <legend>Dropdown</legend> <!-- creates a title inside the fieldset for the label -->
+    <select id="dropdown"> <!-- creates a dropdown bar-->
+      <option value=""> Select one </option> 
+      <!-- this line of code creates an option in the  dropdown bar -->
+      <option value="1"> Option 1 </option>
+      <option value="2"> Option 2 </option>
+      <option value="3"> Option 3 </option>
+      <option value="4"> Option 4 </option>
+    </select>
+  </label> 
+</fieldset>
+<!-- -->
+<fieldset>
+  <legend>Radio Buttons</legend>
+    <label id="radio-buttons"><input id="button1" type="radio" name="button" value="button-1" checked /> 
+    <!-- this space is for the name of the button --> Button 1 </label>
+    <label id="radio-buttons"><input id="button2" type="radio" name="button" value="button-2" /> Button 2</label>
+</fieldset>
+<!-- -->
+<fieldset>
+  <legend>Checkbox</legend>
+  <label id="checkbox-buttons">
+    <input value="checkbox-1" type="checkbox" /> Checkbox 1
+  </label>
+  <label id="checkbox-buttons">
+    <input value="checkbox-2" type="checkbox" /> Checkbox 2
+  </label>
+</fieldset>
+<!-- -->
+<fieldset>
+  <legend>Textarea</legend>
+  <label>
+    <textarea placeholder="type text"></textarea>
+  </label>
+</fieldset>
+<!-- -->
+<fieldset>
+  <label>
+    <input id="submit" type="submit" />
+  </label>
+</fieldset>
+
+
+
+
+</form>
+</body>
+
+</html>
